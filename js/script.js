@@ -3,6 +3,8 @@ const elForm = document.querySelector("#form");
 const elBg = document.querySelector(".bg");
 const elBtn = document.querySelector(".logF");
 
+// alert("Ma'lumot qoshish uchun [Add news] page ga oting");
+
 elBtn.addEventListener("click", () => {
   elForm.style.transform = "translateY(-0%)";
   elBg.style.display = "block";
