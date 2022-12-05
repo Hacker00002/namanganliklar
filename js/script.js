@@ -3,7 +3,7 @@ const elForm = document.querySelector("#form");
 const elBg = document.querySelector(".bg");
 const elBtn = document.querySelector(".logF");
 
-// alert("Ma'lumot qoshish uchun [Add news] page ga oting");
+alert("Ma'lumot qoshish uchun [Add news] page ga oting ,, ynagiliklarni izlash uchun [Искать все новости] page ga oting");
 
 elBtn.addEventListener("click", () => {
   elForm.style.transform = "translateY(-0%)";
@@ -52,6 +52,8 @@ allObject.addEventListener("click", function (e) {
     const removedArr = arrCards.filter(function (targetT) {
       if (targetT.id != Number(ifSet)) {
         return targetT;
+      }else{
+        alert("Siz bu yangilikni ochirsangiz baza danham ochib ketadi")
       }
     });
     arrCards = removedArr;
